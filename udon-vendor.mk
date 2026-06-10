@@ -868,8 +868,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
-    vendor/oneplus/udon/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
-    vendor/oneplus/udon/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/inparm/iris7/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7/inParm14.txt \
@@ -982,12 +980,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/oneplus/udon/proprietary/odm/firmware/fastchg/smart_chg_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/smart_chg_config_table.txt \
     vendor/oneplus/udon/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/20031/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/FW_S3908_SAMSUNG.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img \
@@ -1033,35 +1025,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/22091/FW_S3910_TIANMA_sys_edge_touch_config.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22091/FW_S3910_TIANMA_sys_edge_touch_config.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/22091/LIMIT_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22091/LIMIT_S3910_BOE.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/22091/LIMIT_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22091/LIMIT_S3910_TIANMA.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_BOE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_BOE_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_BOE_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_BOE_HBP.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_BOE_HBP_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_BOE_HBP_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_BOE_sys_edge_touch_config.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_BOE_sys_edge_touch_config.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_TIANMA.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_TIANMA_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_TIANMA_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_TIANMA_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_TIANMA_HBP.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_TIANMA_HBP_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_TIANMA_HBP_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/FW_S3910_TIANMA_sys_edge_touch_config.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/FW_S3910_TIANMA_sys_edge_touch_config.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/LIB_S3910_BOE_HBP.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/LIB_S3910_BOE_HBP.so \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/LIB_S3910_TIANMA_HBP.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/LIB_S3910_TIANMA_HBP.so \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/LIMIT_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/LIMIT_S3910_BOE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/LIMIT_S3910_BOE_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/LIMIT_S3910_BOE_HBP.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/LIMIT_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/LIMIT_S3910_TIANMA.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22623/LIMIT_S3910_TIANMA_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22623/LIMIT_S3910_TIANMA_HBP.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_BOE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_BOE_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_TIANMA.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_TIANMA_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_TIANMA_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_TIANMA_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_TIANMA_HBP.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_TIANMA_HBP_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_TIANMA_HBP_FAE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/FW_S3910_TIANMA_sys_edge_touch_config.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/FW_S3910_TIANMA_sys_edge_touch_config.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/LIB_S3910_TIANMA_HBP.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/LIB_S3910_TIANMA_HBP.so \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/LIMIT_S3910_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/LIMIT_S3910_BOE.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/LIMIT_S3910_BOE_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/LIMIT_S3910_BOE_AGING.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/LIMIT_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/LIMIT_S3910_TIANMA.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/LIMIT_S3910_TIANMA_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/LIMIT_S3910_TIANMA_AGING.img \
-    vendor/oneplus/udon/proprietary/odm/firmware/tp/22624/LIMIT_S3910_TIANMA_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22624/LIMIT_S3910_TIANMA_HBP.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/22803/FW_S3910_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22803/FW_S3910_TIANMA.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/22803/FW_S3910_TIANMA_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22803/FW_S3910_TIANMA_FAE.img \
     vendor/oneplus/udon/proprietary/odm/firmware/tp/22803/FW_S3910_TIANMA_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22803/FW_S3910_TIANMA_HBP.img \
@@ -1676,7 +1639,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.oplus.hardware.touch-V1-ndk_platform \
-    vendor.oplus.hardware.touch-V2-ndk_platform \
     odm_lib_rfsa_adsp_QNN_lib_libQnnHtpV69Skel_so \
     odm_lib_rfsa_adsp_aiboost_libQnnHtpV69Skel_so \
     odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so \
@@ -1714,7 +1676,7 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
     manifest_oplus_cameraextension_aidl.xml \
     manifest_oplus_cammidasservice_aidl.xml \
-    manifest_oplus_fingerprint_aidl.xml \
+    manifest_oplus_fingerprint_aidl_v2.xml \
     manifest_oplus_sendextcamcmd.xml \
     vendor.qti.camera.provider@2.7-service_64 \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
