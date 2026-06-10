@@ -5651,32 +5651,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "consumerir.default",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/consumerir.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libSonyIMX471RmscLibrary",
     owner: "oneplus",
     strip: {
@@ -7815,31 +7789,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.ir-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/android.hardware.ir-V1-ndk_platform.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -14281,15 +14230,6 @@ prebuilt_rfsa {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.ir-service.xml",
-    owner: "oneplus",
-    src: "proprietary/odm/etc/vintf/manifest/android.hardware.ir-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "manifest_oplus_cameraextension_aidl.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml",
@@ -14387,37 +14327,6 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.ir-service",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/android.hardware.ir-service",
-            ],
-            shared_libs: [
-                "android.hardware.ir-V1-ndk_platform",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
 }
 
 cc_prebuilt_binary {

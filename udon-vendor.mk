@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/udon
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/udon/proprietary/odm/etc/QtiFtmPublicKey.pem:$(TARGET_COPY_OUT_ODM)/etc/QtiFtmPublicKey.pem \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -864,7 +865,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
-    vendor/oneplus/udon/proprietary/odm/etc/init/android.hardware.ir-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.ir-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
@@ -1126,8 +1126,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_spi.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b07 \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_spi.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b08 \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_spi.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.mdt \
+    vendor/oneplus/udon/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/oneplus/udon/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/oneplus/udon/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
+    vendor/oneplus/udon/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/oneplus/udon/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/oneplus/udon/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/oneplus/udon/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -1388,7 +1390,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.mcx.usecase.extension \
     camera.qcom \
     com.qti.chi.override \
-    consumerir.default \
     libSonyIMX471RmscLibrary \
     libaidenoiser \
     libbitmlengine \
@@ -1452,7 +1453,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     android.hardware.biometrics.common-V1-ndk_platform \
-    android.hardware.ir-V1-ndk_platform \
     com.qti.sensor.udon_imx890 \
     com.qti.sensor.udon_imx890_sunny \
     com.qti.sensor.udon_ov02b \
@@ -1712,12 +1712,10 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libvdblurless_5_0_2_skel_so \
     odm_lib_rfsa_adsp_libvdblurless_skel_so \
     odm_lib_rfsa_adsp_libvdsuperphoto_skel_so \
-    android.hardware.ir-service.xml \
     manifest_oplus_cameraextension_aidl.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_fingerprint_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
     vendor.qti.camera.provider@2.7-service_64 \
-    android.hardware.ir-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.cammidasservice-V1-service
