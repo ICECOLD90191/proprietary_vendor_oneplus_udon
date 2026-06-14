@@ -1415,7 +1415,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    android.hardware.biometrics.common-V1-ndk_platform \
     com.qti.sensor.udon_imx890 \
     com.qti.sensor.udon_imx890_sunny \
     com.qti.sensor.udon_ov02b \
@@ -1633,12 +1632,10 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.oplus.hardware.engcamera@1.0 \
     vendor.oplus.hardware.extcamera@1.0 \
-    vendor.oplus.hardware.olc2-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
-    vendor.oplus.hardware.touch-V1-ndk_platform \
     odm_lib_rfsa_adsp_QNN_lib_libQnnHtpV69Skel_so \
     odm_lib_rfsa_adsp_aiboost_libQnnHtpV69Skel_so \
     odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so \
