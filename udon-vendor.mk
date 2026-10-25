@@ -8,9 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/QtiFtmPublicKey.pem:$(TARGET_COPY_OUT_ODM)/etc/QtiFtmPublicKey.pem \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
-    vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
-    vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
-    vendor/oneplus/udon/proprietary/odm/etc/acdbdata/MOS/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/MOS/acdb_cal.acdb \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_cal.acdb \
     vendor/oneplus/udon/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/udon/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
@@ -1408,10 +1405,7 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     libubifocus \
     sensors.ssc \
-    vendor.oplus.hardware.cameraextension-V1-ndk_platform \
-    vendor.oplus.hardware.cammidasservice-V1-ndk_platform_vendor \
     vendor.oplus.hardware.cammidasservice@1.0 \
-    vendor.oplus.hardware.osense.client-V1-ndk_platform \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -1624,18 +1618,15 @@ PRODUCT_PACKAGES += \
     libthirdcapability \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
+    libvasapi \
     libwatermark_photo \
     libwrapper_te \
     libyuv2 \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
-    vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
-    vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.oplus.hardware.engcamera@1.0 \
     vendor.oplus.hardware.extcamera@1.0 \
     vendor.oplus.hardware.orms@1.0 \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
-    vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     odm_lib_rfsa_adsp_QNN_lib_libQnnHtpV69Skel_so \
     odm_lib_rfsa_adsp_aiboost_libQnnHtpV69Skel_so \
     odm_lib_rfsa_adsp_aiboost_libaiboostubwc_skel_so \
@@ -1678,3 +1669,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.provider@2.7-service_64 \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.cammidasservice-V1-service
+
+PRODUCT_PACKAGES += \
+    vendor_etc_acdbdata_waipio_mtp_acdb_cal_acdb
